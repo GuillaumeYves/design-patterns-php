@@ -53,6 +53,20 @@ Chaque pattern dispose de son propre dossier avec un exemple fonctionnel.
 - `strategy/` : Strategy
 - `common/` : Classe Produit commune à tous les exemples
 
+### Dossier architecture :
+
+- **DTO (Data Transfer Object)** : Sert à transférer des données entre différentes couches de l'application sans exposer la logique métier. Exemple : `ProductDTO` pour transporter les données d'un produit.
+- **Repository** : Centralise l'accès aux données et isole la logique de persistance. Exemple : `ProductRepository` pour récupérer les produits depuis une source de données.
+- **Service** : Contient la logique métier et orchestre les appels aux repositories et autres composants. Exemple : `ProductService` pour calculer le prix TTC d'un produit.
+- **common/** : Classe Product commune à tous les exemples d'architecture.
+
+Chaque sous-dossier illustre un concept clé de l'architecture logicielle, avec un exemple fonctionnel dans `index.php`.
+
+- `DTO/` : Data Transfer Object
+- `Repository/` : Repository
+- `Service/` : Service
+- `common/` : Classe Product commune
+
 ### Tests
 
 1. Lancez un serveur PHP local dans le dossier du projet :
