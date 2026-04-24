@@ -36,6 +36,23 @@ Chaque pattern dispose de son propre dossier avec un exemple fonctionnel.
 - `proxy/` : Proxy
 - `common/` : Classe Product commune à tous les exemples
 
+### Dossier comportement-avance :
+
+- **Chain of Responsibility** : Permet de faire passer une requête à travers une chaîne d'objets jusqu'à ce qu'un objet la traite. Exemple : validation séquentielle de propriétés d'un produit.
+- **Command** : Encapsule une requête sous forme d'objet, permettant de paramétrer des actions, les mettre en file ou les annuler. Exemple : ajout d'un produit via une commande.
+- **Observer** : Permet à des objets d'être notifiés automatiquement lors d'un changement d'état d'un autre objet. Exemple : notification par email ou log lors d'une modification de produit.
+- **State** : Permet à un objet de changer de comportement lorsque son état interne change. Exemple : gestion des états d'un produit (brouillon, publié, etc.).
+- **Strategy** : Définit une famille d'algorithmes, encapsule chacun d'eux et les rend interchangeables. Exemple : calcul du prix avec différentes stratégies (promo, TVA, etc.).
+
+Chaque pattern dispose de son propre dossier avec un exemple fonctionnel.
+
+- `chain/` : Chain of Responsibility
+- `command/` : Command
+- `observer/` : Observer
+- `state/` : State
+- `strategy/` : Strategy
+- `common/` : Classe Produit commune à tous les exemples
+
 ### Tests
 
 1. Lancez un serveur PHP local dans le dossier du projet :
